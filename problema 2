@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int dinero;
+    cout<<"Ingresa la cantidad de dinero: ";
+    cin>>dinero;
+
+    int Billete_50 = dinero/50000;
+    int ModuloBillete_50 = dinero%50000;
+
+    int Billete_20 = ModuloBillete_50/20000;
+    int Modulo_Billete20 = ModuloBillete_50%20000;
+
+    int Billete_10 = Modulo_Billete20/10000;
+    int Modulo_Billete10 = Modulo_Billete20%10000;
+
+    int Billete_5 = Modulo_Billete10/5000;
+    int Modulo_Billete5 = Modulo_Billete10%5000;
+
+    int Billete_2 = Modulo_Billete5/2000;
+    int Modulo_Billete2 = Modulo_Billete5%2000;
+
+    int Moneda_Mil = Modulo_Billete2/1000;
+    int Modulo_Moneda_Mil = Modulo_Billete2%1000;
+
+    int Moneda_500 = Modulo_Moneda_Mil/500;
+    int Modulo_Moneda_500 = Modulo_Moneda_Mil%500;
+
+    int Moneda_200 = Modulo_Moneda_500/200;
+    int Modulo_Moneda_200 = Modulo_Moneda_500%200;
+
+    int Moneda_100 = Modulo_Moneda_200/100;
+    int Modulo_Moneda_100 = Modulo_Moneda_200%100;
+
+    int Moneda_50 = Modulo_Moneda_100/50;
+    int Modulo_Moneda_50 = Modulo_Moneda_100%50;
+
+    cout<<"50000: "<<Billete_50<<endl;
+    cout<<"20000: "<<Billete_20<<endl;
+    cout<<"10000: "<<Billete_10<<endl;
+    cout<<"5000: "<<Billete_5<<endl;
+    cout<<"2000: "<<Billete_2<<endl;
+    cout<<"1000: "<<Moneda_Mil<<endl;
+    cout<<"500: "<<Moneda_500<<endl;
+    cout<<"200: "<<Moneda_200<<endl;
+    cout<<"100: "<<Moneda_100<<endl;
+    cout<<"50: "<<Moneda_50<<endl;
+    cout<<endl;
+    cout<<"Faltante: "<<Modulo_Moneda_50<<endl;
+
+
+    return 0;
+}
