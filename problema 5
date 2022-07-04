@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int numero_impar;
+    cout<<"escriba un número IMPAR, por favor:  ";
+    cin>>numero_impar;
+
+    while (numero_impar%2==0) {
+        cout<<"No mijo, ya le dije que sólo números IMPARES, por favor\n : ";
+        cin>>numero_impar;
+    }
+    int ast=numero_impar/2;
+    for (int i = 1; i<=numero_impar; i+=2){
+        for (int v=0; v<ast; v++){
+            cout<<" ";
+        }
+        for (int ast=i; ast > 0; ast--){
+            cout<<"*";
+        }
+        cout<<endl;
+        ast--;
+
+    }
+    numero_impar-=2;
+    ast=1;
+    for (int i = numero_impar; i>0; i-=2){
+        for (int v=0; v<ast; v++){
+            cout<<" ";
+        }
+        for (int ast=i; ast > 0; ast--){
+            cout<<"*";
+        }
+        cout<<endl;
+        ast++;
+
+    }
+
+    return 0;
+}
