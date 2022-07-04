@@ -7,11 +7,11 @@ int main()
 {
 
     int num, sumDiag=1;
-    cout<<"Ingresa un numero ==> ";
+    cout<<"Ingresa un numero: ";
     cin>>num;
 
     while (num%2==0) {
-        cout<<"Solo se aceptan numeros impares. Vuelve a ingresar el numero\n ==> ";
+        cout<<"Solo se aceptan numeros impares. Vuelve a ingresar el numero\n : ";
         cin>>num;
     }
 
